@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  ativo: false
+  nascimento: 2017-06-11
+  cadastro: 2017-06-11 11:54:22
+  altura: 1.5
+
+two:
+  nome: MyString
+  ativo: false
+  nascimento: 2017-06-11
+  cadastro: 2017-06-11 11:54:22
+  altura: 1.5

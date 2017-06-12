@@ -24,7 +24,7 @@
       <th>Nascimento</th>
       <th>Cadastro</th>
       <th>Altura</th>
-      <th colspan="3"></th>
+      <th ></th>
     </tr>
   </thead>
 
@@ -36,9 +36,8 @@
         <td><%= cliente.nascimento %></td>
         <td><%= cliente.cadastro %></td>
         <td><%= cliente.altura %></td>
-        <td><%= link_to 'Show', cliente %></td>
-        <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
-        <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', cliente %> <%= link_to 'Edit', edit_cliente_path(cliente) %> <%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      
       </tr>
     <% end %>
   </tbody>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :numeros
   resources :salas
   resources :testes
   resources :menus

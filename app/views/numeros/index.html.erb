@@ -13,25 +13,25 @@
 <body>
 <p id="notice"><%= notice %></p>
 
-<h1>Menus</h1>
+<h1>Numeros</h1>
 
     <table id="table" data-toggle="table" data-pagination="true" data-search="true">
 
 
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Numero</th>
       <th></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @menus.each do |menu| %>
+    <% @numeros.each do |numero| %>
       <tr>
-        <td><%= menu.name %></td>
-        <td><%= link_to 'Show', menu %>
-        <%= link_to 'Edit', edit_menu_path(menu) %>
-        <%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= numero.numero %></td>
+        <td><%= link_to 'Show', numero %>
+        <%= link_to 'Edit', edit_numero_path(numero) %>
+        <%= link_to 'Destroy', numero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -39,6 +39,6 @@
 
 <br>
 
-<%= link_to 'New Menu', new_menu_path %>
+<%= link_to 'New Numero', new_numero_path %>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Testes</h1>
+
+    <table id="table" data-toggle="table" data-pagination="true" data-search="true">
+
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @testes.each do |testis| %>
+      <tr>
+        <td><%= testis.name %></td>
+        <td><%= link_to 'Show', testis %>
+        <%= link_to 'Edit', edit_testis_path(testis) %>
+        <%= link_to 'Destroy', testis, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Testis', new_testis_path %>

@@ -2,7 +2,13 @@
 
 <h1><%= plural_table_name.titleize %></h1>
 
-<table id="table" data-toggle="table" data-pagination="true" data-search="true">
+<% if plural_table_name.downcase.eql? "salas" -%>
+    <table id="table" data-toggle="table" data-pagination="true">      
+<%else -%>
+    <table id="table" data-toggle="table" data-pagination="true" data-search="true">
+<%end -%>
+
+
   <thead>
     <tr>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>

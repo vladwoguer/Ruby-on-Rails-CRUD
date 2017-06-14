@@ -1,6 +1,36 @@
+<html>
+
+<head>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/css/bootstrap-slider.min.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/bootstrap-slider.min.js"></script>
+
+
+</head>
+
+<body>
+
 <h1>Editing Numero</h1>
 
 <%= render 'form', numero: @numero %>
 
 <%= link_to 'Show', @numero %> |
 <%= link_to 'Back', numeros_path %>
+
+<script>
+
+// With JQuery
+$('#ex1').slider({
+  formatter: function(value) {
+    return 'Current value: ' + value;
+  }
+});
+</script>
+</body>
+</html>
